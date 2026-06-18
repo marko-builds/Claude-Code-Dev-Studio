@@ -27,7 +27,7 @@ You bring the idea. The studio handles the rest.
 
 ```bash
 # Clone
-git clone https://github.com/Idzuo32/claude-code-dev-studio my-project
+git clone https://github.com/marko-builds/Claude-Code-Dev-Studio my-project
 cd my-project && rm -rf .git && git init
 
 # Open Claude Code
