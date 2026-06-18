@@ -26,9 +26,9 @@ You bring the idea. The studio handles the rest.
 ## Start Here
 
 ```bash
-# Clone
-git clone https://github.com/marko-builds/Claude-Code-Dev-Studio my-project
-cd my-project && rm -rf .git && git init
+# Scaffold a fresh project (no git history to strip)
+npx degit marko-builds/Claude-Code-Dev-Studio my-project
+cd my-project && git init
 
 # Open Claude Code
 claude
@@ -36,6 +36,16 @@ claude
 # That's it. The studio takes it from here.
 /start
 ```
+
+> Prefer the GitHub UI? Click **["Use this template" → Create a new repository](https://github.com/marko-builds/Claude-Code-Dev-Studio/generate)** to start a clean repo, then `git clone` it.
+>
+> <details><summary>Plain <code>git clone</code> instead</summary>
+>
+> ```bash
+> git clone https://github.com/marko-builds/Claude-Code-Dev-Studio my-project
+> cd my-project && rm -rf .git && git init
+> ```
+> </details>
 
 You only need an idea. `/start` interviews you, challenges your concept, detects or builds the right track, produces all project documents, plans your sprints, and hands you a configured project.
 
@@ -190,6 +200,18 @@ For difficult development moments: `prompts/stuck-on-bug.md`, `scope-creep.md`, 
 **Prescriptive.** The studio tells you what to build next, in what order, and why — not just gives you tools.
 
 **Compounding.** Sessions build on each other. Projects build on each other. The studio gets smarter about you over time.
+
+---
+
+## Contributing
+
+This studio improves fastest when people who build with it report back. Bug
+reports, new agents/skills/tracks, and doc fixes are all welcome — see
+[CONTRIBUTING.md](CONTRIBUTING.md).
+
+- **Found a bug or want a feature?** [Open an issue](../../issues/new/choose).
+- **Have a "how do I…" or want to show what you built?** [Start a Discussion](../../discussions).
+- **Changelog:** [CHANGELOG.md](CHANGELOG.md).
 
 ---
 

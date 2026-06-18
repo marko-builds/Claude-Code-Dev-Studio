@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest a new agent, command, skill, track, or improvement
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's the problem or gap?
+      description: What can't you do well with the studio today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you add or change?
+      description: A new agent? Command? Skill? Track? Describe the shape of it.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of addition
+      options:
+        - New agent
+        - New command
+        - New skill
+        - New track / template
+        - Change to existing component
+        - Docs
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered

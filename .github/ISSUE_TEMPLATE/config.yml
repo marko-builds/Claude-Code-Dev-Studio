@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions & ideas
+    url: https://github.com/marko-builds/Claude-Code-Dev-Studio/discussions
+    about: For "how do I…", show-and-tell, and open-ended ideas, start a Discussion instead of an issue.
