@@ -1,0 +1,14 @@
+name: Publish to DeployLog
+on:
+    workflow_dispatch: # manual "Run workflow" button — best for a clean, repeatable take
+    release:
+        types: [published] # the real trigger the product sells
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: deploylogdev/action@v1
+              with:
+                  api-key: ${{ secrets.DEPLOYLOG_API_KEY }}
+                  project: your-project-slug
+                  notify-subscribers: true
